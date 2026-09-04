@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Harshuuu ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6e7, #fff5f8);
+  overflow-x: hidden;
+  color: #5c2340;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  background: rgba(255,255,255,0.88);
+  padding: 30px 22px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(150,50,90,0.2);
+  animation: appear 1s ease;
+}
+
+.flower {
+  font-size: 45px;
+  animation: float 2s infinite ease-in-out;
+}
+
+h1 {
+  font-size: 34px;
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+button {
+  margin-top: 15px;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 30px;
+  background: #ff5c91;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  box-shadow: 0 7px 15px rgba(255,92,145,0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#gift {
+  display: none;
+  animation: appear 1s ease;
+}
+
+.message {
+  margin-top: 25px;
+  text-align: left;
+  background: #fff0f6;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.neet {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 20px;
+  background: #ffe3ed;
+}
+
+.neet h2 {
+  margin-top: 0;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 25px;
+  animation: rise 5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<div class="flower">🌸💗🌸</div>
+
+<h1>For Harshuuu ❤️</h1>
+
+<p class="subtitle">
+I made a little something for youuu 🫣❤️
+<br>
+Tap the buttonnn 👇
+</p>
+
+<button onclick="openGift()">🎁 Open Your Gift</button>
+
+<div id="gift">
+
+<div class="message">
+
+<p>
+Harshuuu ❤️🙂‍↔️🙂‍↔️
+</p>
+
+<p>
+Don't worryyy so much about NEET 2027 okayyy 🥺🫂
+I know you're a topperrr and I know how hardworking you areee.
+I genuinely believe you're gonna do amazinggg ❤️
+</p>
+
+<p>
+And yesss 😤📚 I'll keep forcing you to read moreee,
+study moreee and stay focuseddd 😂🙂‍↔️🙂‍↔️
+</p>
+
+<p>
+Don't mind me if I keep irritating you with
+"go studyyy" and "read moreee" 😭😂❤️
+I'm only doing it because I want to see you achieve
+everything you're dreaming offff 🥹❤️
+</p>
+
+<p>
+Whenever you feel stressed or worried,
+just remember that you don't have to handle everything
+aloneee 🫂❤️
+</p>
+
+<p>
+One day at a timeee.
+Keep studyinggg, keep believing in yourself,
+and keep goinggg 📚✨❤️
+</p>
+
+</div>
+
+<div class="neet">
+
+<h2>📚 NEET 2027 MODE: ON 😤🔥</h2>
+
+<p>
+Study hardddd 💪📖<br>
+Believe in yourself ❤️<br>
+Don't give up when it gets difficult 🫂<br>
+And rememberrr...
+</p>
+
+<h3>
+YOU GOT THISSSS HARSHUUU!!! 🥹❤️🔥
+</h3>
+
+</div>
+
+<p style="margin-top:25px;">
+🌸 All the besttt 🌸<br>
+❤️🙂‍↔️🙂‍↔️❤️
+</p>
+
+</div>
+
+</div>
+</div>
+
+<script>
+
+function openGift() {
+  document.getElementById("gift").style.display = "block";
+
+  for(let i = 0; i < 15; i++) {
+    let heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = Math.random() > 0.5 ? "❤️" : "💗";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration =
+      (3 + Math.random() * 3) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }
+}
+
+</script>
+
+</body>
+</html>
